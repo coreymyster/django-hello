@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from firstApp.views import myView
 
+# '' is the root domain and pulls in the myView function from
+# firstApp.views to display "Hello World!" on the home page.
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', myView),
